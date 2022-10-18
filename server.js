@@ -7,7 +7,7 @@
 
 const express = require('express');
 
-// Constants
+// Constantsning on http://${HOST}:${PORT}`);
 const PORT = 3000;
 const HOST = '0.0.0.0';
 
@@ -16,6 +16,5 @@ const app = express();
 app.get('/', (req, res) => {
 	res.send('Hello remote world!\n');
 });
-
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
